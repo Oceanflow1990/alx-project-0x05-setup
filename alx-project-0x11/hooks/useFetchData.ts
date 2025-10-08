@@ -27,7 +27,7 @@ const useFetchData = <T, R>() => {
       setResponseData(result);
       setGeneratedImages((prev) => [
         ...prev,
-        { imageUrl: result?.message, prompt: body?.prompt },
+        { imageUrl: result?.message, prompt: (body as any)?.prompt },
       ]);
     } catch (err) {
       setError((err as Error).message);

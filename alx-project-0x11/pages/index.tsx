@@ -53,6 +53,7 @@ const Home: React.FC = () => {
           />
         )}
       </div>
+
       {generatedImages.length ? (
         <div className="">
           <h3 className="text-xl text-center mb-4">Generated Images</h3>
